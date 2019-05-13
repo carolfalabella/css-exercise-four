@@ -1,4 +1,74 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
   font-size: 10px;
+  font-family: system-ui;
+}
+
+.container {
+    width: 575px;
+    margin: 2% auto;
+    background-color: #dadada;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 4%;
+  text-align: center;
+}
+
+.preview h1{
+  font-size: 2em;
+  text-transform: capitalize;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+div {
+  display: inline-block;
+  margin: 1% 0;
+  position: relative;
+  text-align: center;
+}
+
+img{
+  width:575px;
+  height:100%;
+}
+
+@media screen and (min-width: 991px){
+   .container {
+    width: 991px;
+    text-align: center;
+  }
+  img{
+    width:400px;
+    height:400px;
+  }
+  div{
+    width: 400px;
+    margin: 1% 1%;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1199px){
+   .container {
+    width: 1199px;
+    height: 1199px;
+    text-align: center;
+  }
+  img{
+    width:250px;
+    height: 250px;
+  }
+  div{
+    width: 250px;
+    margin: 1% 1%;
+    position: relative;
+  }
 }
