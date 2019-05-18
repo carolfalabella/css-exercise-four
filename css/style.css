@@ -5,12 +5,11 @@
 body {
   font-size: 10px;
   font-family: system-ui;
+  background-color: #dadada;
 }
 
 .container {
-    width: 575px;
     margin: 2% auto;
-    background-color: #dadada;
 }
 
 h1 {
@@ -39,8 +38,22 @@ img{
   width:575px;
   height:100%;
 }
-
-@media screen and (min-width: 991px){
+@media only screen and (min-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  img{
+    width:320px;
+    height:320px;
+  }
+  div{
+    width: auto;
+    margin: 1% 1%;
+    position: relative;
+  }
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 576px){
    .container {
     width: 991px;
     text-align: center;
